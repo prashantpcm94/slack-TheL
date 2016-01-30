@@ -24,8 +24,8 @@ app = Flask(__name__)
 client = wolframalpha.Client(wol_id)
 
 
-@app.route('/thel',methods=['post'])
-def thel():
+@app.route('/let',methods=['post'])
+def let():
     '''
     :Example:
     /thel current weather in mumbai?
@@ -45,7 +45,7 @@ def thel():
 
 @app.route('/')
 def hello():
-    return redirect('https://github.com/vicky002/slack-TheL')
+    return redirect('https://github.com/prashantpcm94')
 
 
 if __name__ == '__main__':
